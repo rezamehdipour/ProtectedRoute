@@ -1,0 +1,33 @@
+.HeaderComponent {
+	background-color: rgb(247, 247, 247);
+	padding: 2rem 0rem;
+	nav {
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2rem;
+			justify-content: space-around;
+			li {
+				a {
+					font-size: 2rem;
+					padding: 0rem 1rem;
+					border-radius: 6px;
+					&.active {
+						font-weight: bold;
+						background-color: #facc15;
+					}
+					&.login,
+					&.logout {
+						color: white;
+					}
+					&.login {
+						background-color: #84cc16;
+					}
+					&.logout {
+						background-color: #fca5a5;
+					}
+				}
+			}
+		}
+	}
+}

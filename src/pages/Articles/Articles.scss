@@ -1,0 +1,25 @@
+.ArticlesPage {
+	.loading {
+		margin: 0 auto;
+		width: 50px;
+	}
+
+	ul {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		grid-auto-rows: 1fr;
+		gap: 1rem;
+
+		.article {
+			border: 1px solid rgba(0, 0, 0, 0.1);
+			border-radius: 6px;
+			padding: 1rem;
+
+			h2 {
+				font-size: 2rem;
+				text-transform: uppercase;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+}
